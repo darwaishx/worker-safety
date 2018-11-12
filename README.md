@@ -90,5 +90,15 @@ Next you will deploy the Object Detection project you just created.
 1. Go to IoT and subscribe to topic worker-safety
 2. To view message stream coming from DeepLens, go to IoT and subscribe to topic for your DeepLens device.
 
+## View Worker-Safety Alerts in CloudWatch Dashboard
+
+- Go to CloudWatch Console at https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#
+- Create a dashboard called “worker-safety-dashboard-your-name”
+- Choose Line in the widget
+- Under Custom Namespaces, select “string”, “Metrics with no dimensions”, and then select PersonsWithSafetyHat and PersonsWithoutSafetyHat.
+- Next, set “Auto-refresh” to the smallest interval possible (1h), and change the “Period” to whatever works best for you (1 second or 5 seconds)
+
+NOTE: These metrics will only appear once they have been sent to Cloudwatch via the Rekognition Lambda. It may take some time for them to appear after your model is deployed and running locally.
+
 ## Clean Up
 After completing the labs in this workshop ensure you delete all the resources created in your AWS account during the labs so that no further costs are incurred.
