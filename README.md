@@ -39,17 +39,6 @@ US East (N. Virginia) | [![Launch Worker-Safety Stack](http://docs.aws.amazon.co
 
 6. For Version description enter: Detect person and push frame to S3 bucket. and click Publish.
 
-### Modify Lambda Function to Detect Persons Not Wearing Safety Hats
-
-1. Download and store the [lambda code](./code/lambda.zip) on your local machine.
-2. Go to AWS CloudFormation console at https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/
-3. Select the Worker-Safety CloudFormation stack and click on Resources Tab.
-4. Click on the link for LambdaFunction under Physical ID column.
-5. Under Function code:
-  - For Code entry type, select: Upload a zip file
-  - Click on Upload and upload the zip file you downloaded in step 1.
-  - Click Save.
-
 ## Create Your Project
 
 1. Using your browser, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
