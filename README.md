@@ -15,7 +15,7 @@ In this lab your will the following:
 
 Region| Launch
 ------|-----
-US East (N. Virginia) | [![Launch Worker-Safety Stack](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=MediaAnalysis&templateURL=https://s3.amazonaws.com/aws-workshops-us-east-1/worker-safety/deployment/cf-worker-safety.yaml)
+US East (N. Virginia) | [![Launch Worker-Safety Stack](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Worker-Safety&templateURL=https://s3.amazonaws.com/aws-workshops-us-east-1/worker-safety/deployment/cf-worker-safety.yaml)
 
 2. Under Create stack, check the checkbox for "I acknowledge that AWS CloudFormation might create IAM resources with custom names" and click Create.
 
