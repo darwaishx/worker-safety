@@ -101,4 +101,4 @@ Next you will deploy the Object Detection project you just created.
 NOTE: These metrics will only appear once they have been sent to Cloudwatch via the Rekognition Lambda. It may take some time for them to appear after your model is deployed and running locally.
 
 ## Clean Up
-After completing the labs in this workshop ensure you delete all the resources created in your AWS account during the labs so that no further costs are incurred.
+Delete CloudFormatoin template and it will delete resources it created. Manually delete the S3 bucket as CloudFormation will not delete the bucket if it is not empty. Delete other resources created during the lab.
