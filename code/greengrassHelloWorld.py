@@ -31,7 +31,7 @@ sys.path.append(boto_dir)
 
 import boto3
 
-bucket_name = "workersafety2-srcbucket-71de91y11qzg"
+bucket_name = "worker-safety-srcbucket-fqmu5hr3lew5"
 
 # Create an IoT client for sending to messages to the cloud.
 client = greengrasssdk.client('iot-data')
@@ -95,11 +95,11 @@ class LocalDisplay(Thread):
 
     def join(self):
         self.stop_request.set()
-        
+
 def push_to_s3(img):
     try:
         index = 0
-        
+
         timestamp = int(time.time())
         now = datetime.datetime.now()
         key = "persons/{}_{}/{}_{}/{}_{}.jpg".format(now.month, now.day,
@@ -175,17 +175,26 @@ def greengrass_infinite_infer_run():
             # Dictionary to be filled with labels and probabilities for MQTT
             cloud_output = {}
             # Get the detected objects and probabilities
+            detectedPerson = False
             for obj in parsed_inference_results[model_type]:
                 if obj['prob'] > detection_threshold:
-                    if(output_map[obj['label']] == 'person'):
-                        push_to_s3(frame)
-                        
-            for obj in parsed_inference_results[model_type]:
-                if obj['prob'] > detection_threshold:
-                    
                     if(output_map[obj['label']] == 'person'):
                         detectedPerson = True
-                    
+                        break
+
+            if(detectedPerson):
+                rfr = cv2.resize(frame, (672, 380))
+                push_to_s3(rfr)
+                #fr2 = cv2.resize(frame, (1344, 760))
+                #_, jpg_data = cv2.imencode('.jpg', fr2)
+                #push_to_s3(jpg_data)
+
+            for obj in parsed_inference_results[model_type]:
+                if obj['prob'] > detection_threshold:
+
+                    if(output_map[obj['label']] == 'person'):
+                        detectedPerson = True
+
                     # Add bounding boxes to full resolution frame
                     xmin = int(xscale * obj['xmin']) \
                            + int((obj['xmin'] - input_width/2) + input_width/2)
@@ -193,7 +202,7 @@ def greengrass_infinite_infer_run():
                     xmax = int(xscale * obj['xmax']) \
                            + int((obj['xmax'] - input_width/2) + input_width/2)
                     ymax = int(yscale * obj['ymax'])
-                
+
                     # See https://docs.opencv.org/3.4.1/d6/d6e/group__imgproc__draw.html
                     # for more information about the cv2.rectangle method.
                     # Method signature: image, point1, point2, color, and tickness.
@@ -210,7 +219,7 @@ def greengrass_infinite_infer_run():
                                 cv2.FONT_HERSHEY_SIMPLEX, 2.5, (255, 165, 20), 6)
                     # Store label and probability to send to cloud
                     cloud_output[output_map[obj['label']]] = obj['prob']
-                
+
             # Set the next frame in the local display stream.
             local_display.set_frame_data(frame)
             # Send results to the cloud
