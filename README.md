@@ -39,7 +39,7 @@ US East (N. Virginia) | [![Launch Worker-Safety Stack](http://docs.aws.amazon.co
 
 6. For Version description enter: Detect person and push frame to S3 bucket. and click Publish.
 
-## Create Your Project
+## Create DeepLens Project
 
 1. Using your browser, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
@@ -54,7 +54,7 @@ US East (N. Virginia) | [![Launch Worker-Safety Stack](http://docs.aws.amazon.co
 
 This returns you to the Projects screen where the project you just created is listed with your other projects.
 
-## Deploy Your Project
+## Deploy DeepLens Project
 
 Next you will deploy the Object Detection project you just created.
 
