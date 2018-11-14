@@ -14,3 +14,8 @@ In this lab your will learn how to train a model to detect objects in Amazon Sag
 
 
 ## Open and run object detection notebook
+
+1. Navigate to SageMaker Examples tab
+2. Expand SageMaker algorithms
+3. Open Object Detection Image with JSON
+4. Run the notebook by following through each cell. To run, you can either use the play button in the toolbar or use keyboard shortcut: ctrl + Enter (windows) or cmd + Enter (Mac)
