@@ -15,9 +15,9 @@ In this lab your will the following:
 
 This workshop is broken up into following modules:
 
-1. [Create and Deploy DeepLens Project](1-DeepLens-Project)
-2. [Object Detection using Amazon Sage Maker](2-Object-Detection)
-3. [Worker Safety End to End Solution](3-Worker-Safety)
+1. [Create and Deploy DeepLens Project](1-DeepLens-project)
+2. [Object Detection using Amazon Sage Maker](2-object-detection)
+3. [Worker Safety End to End Solution](3-worker-safety)
 
 
 ## Clean Up
