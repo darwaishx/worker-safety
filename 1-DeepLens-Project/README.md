@@ -51,3 +51,9 @@ To view a project stream on your AWS DeepLens device, start your terminal and ru
 - mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg
 
 To stop viewing the video stream and end your terminal session, press Ctrl+C.
+
+## View Project Log Messages in iot
+1. Go to IoT in AWS Console at https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard
+2. Click on Test in the left navigation.
+3. Enter the IoT topic of your DeepLens device in the text box under Subscription topic and click Subscribe to topic
+4. You should now see log messages published from DeepLens device to IoT.
