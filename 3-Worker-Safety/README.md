@@ -76,8 +76,11 @@ Next you will deploy the Object Detection project you just created.
 
 ## View Output of Your Project
 
-1. Go to IoT and subscribe to topic worker-safety
-2. To view message stream coming from DeepLens, go to IoT and subscribe to topic for your DeepLens device.
+1. Go to IoT Console at https://console.aws.amazon.com/iot/home?region=us-east-1#/test
+2. Under Subscription topic enter worker-safety and click Subscribe to topic.
+3. You should now see JSON message with a list of people detected and whether they are wearing safety hats or not.
+4. To view messages coming from DeepLens as it is processing frames, subscribe to topic for your DeepLens device.
+
 
 ## View Worker-Safety Alerts in CloudWatch Dashboard
 
