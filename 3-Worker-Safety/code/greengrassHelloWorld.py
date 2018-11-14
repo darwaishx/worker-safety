@@ -31,7 +31,7 @@ sys.path.append(boto_dir)
 
 import boto3
 
-bucket_name = "worker-safety-srcbucket-fqmu5hr3lew5"
+bucket_name = "REPLACE-WITH-NAME-OF-YOUR-S3-BUCKET-CREATED-BY-CLOUDFORMATION"
 
 # Create an IoT client for sending to messages to the cloud.
 client = greengrasssdk.client('iot-data')
