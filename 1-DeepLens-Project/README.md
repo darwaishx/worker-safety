@@ -37,4 +37,17 @@ Next you will deploy the Object Detection project you just created.
 
    This will take you to to device screen, which shows the progress of your project deployment.
 
-## View Output of Your Project
+## Viewing a Device Stream on Your AWS DeepLens Device
+
+To view an unprocessed device stream on your AWS DeepLens device, start your terminal and run the following command:
+
+- mplayer -demuxer lavf /opt/awscam/out/ch1_out.h264
+
+To stop viewing the video stream and end your terminal session, press Ctrl+C.
+
+## Viewing a Project Stream on Your AWS DeepLens Device
+To view a project stream on your AWS DeepLens device, start your terminal and run the following command:
+
+- mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg
+
+To stop viewing the video stream and end your terminal session, press Ctrl+C.
