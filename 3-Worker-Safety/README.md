@@ -58,7 +58,7 @@ This returns you to the Projects screen where the project you just created is li
 
 Next you will deploy the Object Detection project you just created.
 
-1. From Deeplens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
+1. From DeepLens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
 
 2. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device where you want to deploy this project.
 
