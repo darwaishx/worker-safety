@@ -9,15 +9,15 @@ In this lab your will the following:
 
 ## Architecture
 
-![](3-worker-safety/assets/worker-safety-arch.png)
+![](3-Worker-Safety/assets/worker-safety-arch.png)
 
 ## Modules
 
 This workshop is broken up into following modules:
 
-1. [Create and Deploy DeepLens Project](1-DeepLens-project)
-2. [Object Detection using Amazon Sage Maker](2-object-detection)
-3. [Worker Safety End to End Solution](3-worker-safety)
+1. [Create and Deploy DeepLens Project](1-DeepLens-Project)
+2. [Object Detection using Amazon Sage Maker](2-Object-Detection)
+3. [Worker Safety End to End Solution](3-Worker-Safety)
 
 
 ## Clean Up
