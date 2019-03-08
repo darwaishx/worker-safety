@@ -164,12 +164,12 @@ In this lab your will the following:
 8. Expand View Details
 9. Under: Your unauthenticated identities would like access to Cognito, expand View Policy Document and click Edit.
 10. Click Ok for Edit Policy prompt.
-11. Copy JSON from cognitopolicy.json and paste in the text box.
+11. Copy JSON from [cognitopolicy.json](./code/cognitopolicy.json) and paste in the text box.
 12. Click Allow
 13. Make note of the Identity Pool as you will need it in following steps.
 14. Got to IoT in AWS Console at: https://console.aws.amazon.com/iot
 15. Click on settings and make note of Endpoint, you will need this the following step.
-16. Download webdashboard.zip and unzip on your local drive.
+16. Download [webdashboard.zip](./code/webdashboard.zip) and unzip on your local drive.
 17. Edit aws-configuration.js and update poolId with Cognito Identity Pool Id and host with IoT EndPoint you got in earlier steps.
 18. From terminal go to the root of the unzipped folder and run “npm install”
 19. Next, run “./node_modules/.bin/webpack —config webpack.config.js”
