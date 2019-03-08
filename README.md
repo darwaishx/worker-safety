@@ -1,11 +1,11 @@
-# Get Started with Deep Learning and Computer Vision Using AWS DeepLens
+# Worker Safety with AWS DeepLens and Amazon Rekognition
 
 ## Learning Objectives of This lab
 In this lab your will the following:
 - Create and deploy object detection project to DeepLens.
 - Modify the DeepLens object detection inference lambda function to detect persons and upload frame to S3.
 - Create lambda function to identify persons who are not wearing safety hats.
-- Analyze results using IoT and CloudWatch.
+- Analyze results using IoT and CloudWatch and Web Dashboard.
 
 ## Architecture
 
@@ -74,7 +74,7 @@ In this lab your will the following:
 * Key: iot_topic
 * Value: worker-safety-demo-cloud
 
-1. Download lambda.zip (code/lambda.zip)
+1. Download lambda.zip [](code/lambda.zip)
 2. Under Function code:
 
 * Code entry type: Upload a zip file
