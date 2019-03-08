@@ -74,7 +74,7 @@ In this lab your will the following:
 * Key: iot_topic
 * Value: worker-safety-demo-cloud
 
-1. Download lambda.zip [](code/lambda.zip)
+1. Download [lambda.zip](./code/lambda.zip).
 2. Under Function code:
 
 * Code entry type: Upload a zip file
@@ -104,7 +104,7 @@ In this lab your will the following:
 * Existing role: DeepLensInferenceLambdaRole
 * Click Create function.
 
-1. Copy the code from deeplens-lambda.py (code/deeplens-lambda.py) and paste under Function code for the lambda function. You can find the python file in your resources section.
+1. Copy the code from [deeplens-lambda.py](./code/deeplens-lambda.py) and paste under Function code for the lambda function. You can find the python file in your resources section.
 2. Go to line 34 and modify line below with the name of your S3 bucket created in the earlier step.
 
 * bucket_name = "REPLACE-WITH-NAME-OF-YOUR-S3-BUCKET"
