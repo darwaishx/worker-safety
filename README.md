@@ -9,7 +9,7 @@ In this lab your will the following:
 
 ## Architecture
 
-![](3-Worker-Safety/assets/worker-safety-arch.png)
+![](arch.png)
 
 ## Modules
 
