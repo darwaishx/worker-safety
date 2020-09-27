@@ -1,5 +1,7 @@
 # Worker Safety with AWS DeepLens and Amazon Rekognition
 
+## This repo has moved to: https://github.com/aws-samples/aws-deeplens-worker-safety-project
+
 ## Learning Objectives of This lab
 In this lab your will the following:
 - Create and deploy object detection project to DeepLens.
